@@ -2,7 +2,7 @@ from typing import TextIO
 
 import click
 
-from aoc2022.solutions import elves_in_file
+from aoc2022.solutions.day1 import elves_in_file
 
 
 TOP_N_ELVES = 3

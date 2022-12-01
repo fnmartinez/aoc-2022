@@ -2,7 +2,7 @@ from typing import TextIO
 
 import click
 
-from aoc2022.solutions import Elf, elves_in_file
+from aoc2022.solutions.day1 import Elf, elves_in_file
 
 
 @click.command()
