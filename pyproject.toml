@@ -1,0 +1,41 @@
+[project]
+name = "aoc2022"
+description = "Solutions for Advent of Code 2022 Edition"
+version = "2022.12.01.0"
+
+authors = [
+    { name = "Facundo Martinez" },
+]
+
+readme = "README.md"
+
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.10",
+]
+
+requires-python = ">= 3.10"
+
+dependencies = [
+    "click"
+]
+
+[project.optional-dependencies]
+tests = [
+    "black",
+    "pytest >= 6.2.5",
+    "tox"
+]
+
+[project.scripts]
+aoc2022 = "aoc2022:cli"
+
+[build-system]
+requires = ["setuptools >= 60.0.1", "wheel", "tomli"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 120
+
+[tool.setuptools.packages.find]
+where = ["src"]
