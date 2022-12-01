@@ -42,3 +42,6 @@ venv.bak/
 
 ### Mac Stuff
 .DS_Store
+
+### Project Stuff
+input/*
